@@ -1,0 +1,67 @@
+FLUJO DE TRABAJO DE LA PRUEBA DE TESTING.
+Crear la clase MainValidator
+La clase MainValidator contiene el método IsValidPhoneNumber que valida si un número de teléfono es válido. En este caso, el método comprueba si el número de teléfono tiene un mínimo de 10 dígitos.
+
+csharp
+Copy code
+public class MainValidator
+{
+    public bool IsValidPhoneNumber(string phoneNumber)
+    {
+        return phoneNumber.Length == 10;
+    }
+}
+Crear la clase MainValidatorTests
+La clase MainValidatorTests contiene el método ValidatePhoneNumber que utiliza la librería Xunit para probar si el método IsValidPhoneNumber devuelve el valor esperado.
+
+csharp
+Copy code
+public class MainValidatorShould
+{
+    [Theory]
+    [InlineData("1234567890", true)]
+    [InlineData("123456789", false)]
+    public void ValidatePhoneNumber(string phoneNumber, bool expected)
+    {
+        var validator = new MainValidator();
+
+        bool isValid = validator.IsValidPhoneNumber(phoneNumber);
+
+        Assert.Equal(expected, isValid);
+    }
+}
+Ejecutar las pruebas
+Puedes ejecutar las pruebas utilizando la línea de comandos o un entorno de desarrollo integrado (IDE) como Visual Studio. Cuando se ejecutan las pruebas, el resultado debe ser el siguiente:
+
+Copy code
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 2
+     Passed: 2
+ Total time: 0.5778 Seconds
+Modificar la lógica de validación
+Puedes modificar la lógica del método IsValidPhoneNumber para validar otros criterios según tus necesidades. Por ejemplo, puedes comprobar si el número de teléfono cumple con un patrón de formato específico o si contiene ciertos caracteres.
+
+csharp
+Copy code
+public bool IsValidPhoneNumber(string phoneNumber)
+{
+    // Comprueba si el número de teléfono tiene un mínimo de 10 dígitos
+    // y que solo contiene dígitos y el caracter '-'
+    return Regex.IsMatch(phoneNumber, @"^\d{3}-\d{3}-\d{4}$");
+}
+Ejecutar las pruebas nuevamente
+Después de modificar la lógica de validación, debes ejecutar las pruebas nuevamente para asegurarte de que el método siga funcionando correctamente.
+
+Copy code
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 2
+     Passed: 2
+ Total time: 0.5778 Seconds

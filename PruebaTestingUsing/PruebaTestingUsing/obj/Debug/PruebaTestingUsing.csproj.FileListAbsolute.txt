@@ -1,0 +1,7 @@
+C:\Users\Acer\Downloads\PruebaTestingUsing\PruebaTestingUsing\bin\Debug\PruebaTestingUsing.exe.config
+C:\Users\Acer\Downloads\PruebaTestingUsing\PruebaTestingUsing\bin\Debug\PruebaTestingUsing.exe
+C:\Users\Acer\Downloads\PruebaTestingUsing\PruebaTestingUsing\bin\Debug\PruebaTestingUsing.pdb
+C:\Users\Acer\Downloads\PruebaTestingUsing\PruebaTestingUsing\obj\Debug\PruebaTestingUsing.csproj.AssemblyReference.cache
+C:\Users\Acer\Downloads\PruebaTestingUsing\PruebaTestingUsing\obj\Debug\PruebaTestingUsing.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Downloads\PruebaTestingUsing\PruebaTestingUsing\obj\Debug\PruebaTestingUsing.exe
+C:\Users\Acer\Downloads\PruebaTestingUsing\PruebaTestingUsing\obj\Debug\PruebaTestingUsing.pdb
